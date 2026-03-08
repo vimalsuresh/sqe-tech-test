@@ -16,16 +16,26 @@ export default defineConfig({
     ['html', { open: 'never' }],
   ],
   use: {
-    baseURL: env.sauceBaseUrl,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: false,
   },
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'api',
+      testMatch: /api\/.*\.spec\.ts/,
+      use: {
+        baseURL: env.petstoreBaseUrl,
+      },
+    },
+    {
+      name: 'ui',
+      testMatch: /ui\/.*\.spec\.ts/,
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: env.sauceBaseUrl,
+        headless: !!process.env.CI,
+      },
     },
   ],
 });
