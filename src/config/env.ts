@@ -15,8 +15,8 @@ function getEnv(name: string, defaultValue?: string): string {
 const env = {
   sauceBaseUrl: getEnv('SAUCE_BASE_URL', 'https://www.saucedemo.com'),
   petstoreBaseUrl: getEnv('PETSTORE_BASE_URL', 'https://petstore.swagger.io/v2'),
-  sauceUsername: getEnv('SAUCE_USERNAME'),
-  saucePassword: getEnv('SAUCE_PASSWORD'),
+  sauceUsername: process.env.SAUCE_USERNAME,
+  saucePassword: process.env.SAUCE_PASSWORD,
 };
 
 export default env;
