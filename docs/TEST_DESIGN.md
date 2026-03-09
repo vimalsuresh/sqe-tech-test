@@ -206,11 +206,11 @@ If I had more time, the next improvements I would make are:
 3. Add checkout form validation coverage.
 4. Strengthen assertions around API responses and UI state.
 5. Add tagging or filtering options for different test groups.
-6. Better management of secrets by moving the secrests from github secrets env variables to AWS secrets manager or K8 secrets.
+6. Better management of secrets by moving the secrets from github secrets env variables to AWS secrets manager or K8 secrets.
 7. Improve CI reporting further if needed.
 8. Add further abstraction layer for better readability for non technical users to outlay the tests.
 
 ---
 
 ## Summary
-This solution is designed to be a simple maintanable framework having both UI and API tests in a single project.The two implemented tests provide representative API and UI coverage, while the additional prioritised scenarios show how the suite would be expanded to cover more negative cases, edge conditions, and risk areas.
+This solution is designed to be a simple maintenable framework having both UI and API tests in a single project.The two implemented tests provide representative API and UI coverage, while the additional prioritised scenarios show how the suite would be expanded to cover more negative cases, edge conditions, and risk areas.
