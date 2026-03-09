@@ -6,6 +6,10 @@ import env from '../../src/config/env';
 
 test.describe('Sauce Demo UI', () => {
   test('should allow a standard user to complete checkout successfully', async ({ page }) => {
+    if (!env.sauceUsername || !env.saucePassword) {
+      throw new Error('Missing SAUCE_USERNAME or SAUCE_PASSWORD');
+    }
+
     const purchaseFlow = new PurchaseFlow(page);
     const user = buildCheckoutUser();
 

@@ -20,3 +20,6 @@ export function buildCheckoutUser(overrides: Partial<any> = {}) {
     ...overrides,
   };
 }
+export function buildInvalidOrderId(): number {
+  return 999999999;
+}
