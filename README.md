@@ -10,7 +10,7 @@ This repository contains an automated test solution for the technical exercise u
 - **HTML reporting** with Playwright
 - **GitHub Actions** for CI execution
 
-The implementation is intentionally limited to the scope of the tech test. It includes one representative API scenario and one representative UI scenario, with design decisions, coverage rationale, and prioritised future scenarios documented in `docs/TEST_DESIGN.md`.
+The implementation is intentionally limited to the scope of the tech test. It includes three representative API scenarios and one representative UI scenario, with design decisions, coverage rationale, and prioritised future scenarios documented in `docs/TEST_DESIGN.md`.
 
 ---
 
@@ -67,8 +67,7 @@ npx playwright install
 ## Configuration
 
 Create a local `.env` file in the project root based on `.env.example`.
-The creds for the sause demo UI tests can be obtained from public demo website https://www.saucedemo.com/
-For this excercise , the username and password are provided in the .env.example file.
+The username and password are provided in the .env.example file.
 
 ### Example `.env`
 

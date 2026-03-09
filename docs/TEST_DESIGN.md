@@ -72,7 +72,7 @@ violation.
 - the response is valid JSON
 
 ### Note
- The test intentionally logs a warning to report a bug to team and fix the issue.
+ The test documents current behaviour and highlights a validation gap.
 
 
 ---
@@ -206,9 +206,9 @@ If I had more time, the next improvements I would make are:
 3. Add checkout form validation coverage.
 4. Strengthen assertions around API responses and UI state.
 5. Add tagging or filtering options for different test groups.
-6. Better management of secrets by moving the secrests from github secrects env variables to AWS secrets manager or K8 secrets.
+6. Better management of secrets by moving the secrests from github secrets env variables to AWS secrets manager or K8 secrets.
 7. Improve CI reporting further if needed.
-8. Add further abstraction layer for better readabilty for non technical users to outlay the tests.
+8. Add further abstraction layer for better readability for non technical users to outlay the tests.
 
 ---
 
