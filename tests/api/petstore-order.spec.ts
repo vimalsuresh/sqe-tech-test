@@ -37,7 +37,7 @@ test.describe("Petstore API", () => {
     expect(response.status()).toBe(404);
   });
 
-  test("should return a response when creating an order with an empty body", async ({
+  test("documents validation gap: empty order payload is accepted", async ({
     request,
   }) => {
     const client = new PetstoreClient(request);
